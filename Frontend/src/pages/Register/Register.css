@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page {
+  height: 100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+.heading{
+  position: absolute;
+  left: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+}
+.font{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 23px;
+  color:rgb(238, 243, 245);
+}
+.toast-success, .toast-error {
+  background-color:rgb(0, 128, 0);
+  
+}
+.heading-font{
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:rgb(238, 243, 245);
+}
+.cover {
+  background-color:rgba(17, 16, 16, 0.95);
+  width: 30em;
+  height: 35em;
+  right: 180px;
+  position: absolute;
+  border-radius: 1.5em;
+  box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+input {
+  border: none;
+  background-color: rgb(229,226,226);
+  height: 2em;
+  width: 80%;
+  border-radius: 0.25em;
+  text-align: center;
+  padding: 2em;
+
+}
+input:focus {
+  outline-color: rgb(32,177,255);
+
+}
+.login-btn {
+  width: 40%;
+  height: 3em;
+  background-color:rgb(32,177,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.login-btn:hover {
+  transform: scale(1.25);
+}
+.text {
+  position: relative;
+  bottom: 1em;
+  
+}
+.forgot-password
+{
+  color:rgb(243, 245, 247); ;
+}
+.hide{
+  position: absolute;
+  transform: scale(0);
+}
+.login-popup {
+  position: absolute;
+  height: 30em;
+  width:30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25em;
+  background-color: black;
+  color: white;
+  bottom:0;
+  transform: scale(1);
+  transition: 1.5s;
+
+}
