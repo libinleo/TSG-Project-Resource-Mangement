@@ -32,14 +32,12 @@ def register(id=None):
             data = execute(query, bindData)
             #data will return 1 when the query excecutes successfully and return 0 when no such record is found
             if(data == 1):
-                # conn.commit()
                 commitConnection()
                 return jsonify('User already exist !!')
             elif (data == 0):
                 sqlQuery = "INSERT INTO user(fullname, username, password, roleid) VALUES( %s, %s, %s, %s)"
                 bindData = (user.fullname, user.username, user.password, user.roleid)
                 execute(sqlQuery, bindData)
-                # conn.commit()
                 commitConnection()
                 respone = jsonify('User added successfully!')
                 respone.status_code = 200
